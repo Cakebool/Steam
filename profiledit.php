@@ -50,7 +50,6 @@ $aJeux= $oJeux->fetchAll(PDO::FETCH_ASSOC);
                                 $pseudo =htmlspecialchars($_POST["pseudo"]);
                                 $nom = htmlspecialchars ($_POST["nom"]);
                                 $prenom = htmlspecialchars ($_POST["prenom"]);
-                                $birth = htmlspecialchars ($_POST["birth"]);
                                 $email = htmlspecialchars ($_POST["email"]);
                                 $request = $db->prepare('UPDATE joueurs SET pseudo = :pseudo, nom = :nom, prenom = :prenom, email = :email  WHERE id="'.$_SESSION["id_joueurs"].'"');
                                 $request->bindParam(':pseudo', $pseudo);
