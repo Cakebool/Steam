@@ -61,7 +61,7 @@ $aJeux= $oJeux->fetchAll(PDO::FETCH_ASSOC);
                 </div>
                 <div class="bibli col-md-12">
                     <div class="bibli_content row">
-                        <a><h1>Jeux des Amis</h1></a>
+                        <h1>Amis</h1>
                         
                     </div>
                 </div>

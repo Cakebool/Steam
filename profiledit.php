@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    include"conf/db.php";
+   $request = 'select * FROM joueurs WHERE id="'.$_SESSION["id_joueurs"].'"';
+$oJeux= $db->query($request);
+$aJeux= $oJeux->fetchAll(PDO::FETCH_ASSOC);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +20,7 @@
 
     <!-- CSS -->
     <link href="css/style.css" rel="stylesheet">
-      <link href="romain.css" rel="stylesheet">
+      <link href="rom.css" rel="stylesheet">
     <!-- JS -->
     <link href="js/script.js" rel="stylesheet">
 
@@ -26,18 +34,58 @@
         <div class="container">
             <div class="row">
                 <div class="content col-md-6">
-                    <img class="img-responsive" src="img/avatar.jpg" style="height:230px;" alt="">
-                    <form action="profiledit.php" method="post">
-                        <p>Prénom</p>
-                        <input type="text" name="prenom" value="Romain" />
-                        <p>Nom</p>
-                        <input type="text" name="Nom" value="Giraud" />
-                        <p>Pseudo</p>
-                        <input type="text" name="Pseudo" value="Cakebool" />
-                        <p>Date de naissance</p>
-                        <input type="text" name="birth" value="date de naissance" />
-                        <input type="submit" value="Valider" />
-                    </form>
+                    <h1>Modifier le profil</h1>
+                    <img class="img-responsive" src="images/avatar.png" style="height:230px;" alt="">
+                    <?php
+                        $request = $db->prepare("SELECT * FROM joueurs");
+                        $request->execute(array());
+                        if (isset($_POST["pseudo"]) &&
+                            isset($_POST["nom"]) &&
+                            isset($_POST["prenom"]) &&
+                            isset($_POST["email"])){
+                                if( !empty($_POST["pseudo"]) &&
+                                    !empty($_POST["nom"]) &&
+                                    !empty($_POST["prenom"]) &&
+                                    !empty($_POST["email"])){
+                                $pseudo =htmlspecialchars($_POST["pseudo"]);
+                                $nom = htmlspecialchars ($_POST["nom"]);
+                                $prenom = htmlspecialchars ($_POST["prenom"]);
+                                $birth = htmlspecialchars ($_POST["birth"]);
+                                $email = htmlspecialchars ($_POST["email"]);
+                                $request = $db->prepare('UPDATE joueurs SET pseudo = :pseudo, nom = :nom, prenom = :prenom, email = :email  WHERE id="'.$_SESSION["id_joueurs"].'"');
+                                $request->bindParam(':pseudo', $pseudo);
+                                $request->bindParam(':nom', $nom);
+                                $request->bindParam(':prenom', $prenom);
+                                $request->bindParam(':email', $email);
+                                header('Location: profil.php');
+                                }
+                        }
+                        
+                    ?>
+                        <form class="form-signin" method="post" action="profiledit.php">
+                            <h2 class="form-signin-heading">Modifier le profil</h2>
+
+                            <label for="inputPassword" class="sr-only">Nom</label>
+                            <input type="text" name="nom" id="inputPassword" class="form-control" value="<?php echo $aJeux[0]["nom"] ?>" required="" style="margin-top: 40px;">
+
+                            <label for="inputPassword" class="sr-only">Prénom</label>
+                            <input type="text" name="prenom" id="inputPassword" class="form-control champ" value="<?php echo $aJeux[0]["prenom"] ?>" required="">
+
+                            <label for="inputPassword" class="sr-only">Pseudo</label>
+                            <input type="text" name="pseudo" id="inputPassword" class="form-control champ" value="<?php echo $aJeux[0]["pseudo"] ?>" required="">
+
+                            <label for="inputEmail" class="sr-only">Email address</label>
+                            <input type="email" name="email" id="inputEmail" class="form-control champ" value="<?php echo $aJeux[0]["email"] ?>" required="" >
+
+
+                            <button class="btn btn-lg btn-primary btn-block" name="signin" type="submit">Sauvegarder</button>
+                        </form>
+                <?php
+                        
+                        
+                    
+                    ?>
+                    
                 </div>
             </div>
         </div>

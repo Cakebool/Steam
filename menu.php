@@ -18,7 +18,6 @@
             <ul class="nav navbar-nav navbar-right custommenu">
               <li><a href="index.php">ACCUEIL</a></li>
               <li><a href="shop.php">MAGASIN</a></li>
-              <li><a href="#">COMMUNAUTÉ</a></li>
                 <?php
                     if (isset($_SESSION["id_joueurs"])){
                         //éléments du menu seulement si on est connecté
@@ -28,7 +27,6 @@
                         
                     }
               ?>
-              <li><a href="#">SUPPORT</a></li>
               <div class="nav navbar-nav customlog">
                   <?php
                     if (isset($_SESSION["id_joueurs"])){
