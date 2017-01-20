@@ -1,0 +1,35 @@
+.infouser{
+    background: gray;
+}
+.infouser_content{
+    
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.infouser_persona{
+    
+    
+    display: inline-block;
+}
+.name{
+    font-size: 2em;
+    color: white;
+}
+.infouser_avatar{
+    
+    display: inline-block;
+}
+.infouser_badge{
+    display: inline-block;
+}
+.content form p{
+    color: #fff;
+    width:auto !important;
+    margin: 0 !important;
+}
+.bibli_content h1{
+    color: white;
+}
+body{
+    background-color: #1A445F !important;
+}
