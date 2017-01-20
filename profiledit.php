@@ -34,7 +34,6 @@ $aJeux= $oJeux->fetchAll(PDO::FETCH_ASSOC);
         <div class="container">
             <div class="row">
                 <div class="content col-md-6">
-                    <h1>Modifier le profil</h1>
                     <img class="img-responsive" src="images/avatar.png" style="height:230px;" alt="">
                     <?php
                         $request = $db->prepare("SELECT * FROM joueurs");
@@ -51,11 +50,16 @@ $aJeux= $oJeux->fetchAll(PDO::FETCH_ASSOC);
                                 $nom = htmlspecialchars ($_POST["nom"]);
                                 $prenom = htmlspecialchars ($_POST["prenom"]);
                                 $email = htmlspecialchars ($_POST["email"]);
-                                $request = $db->prepare('UPDATE joueurs SET pseudo = :pseudo, nom = :nom, prenom = :prenom, email = :email  WHERE id="'.$_SESSION["id_joueurs"].'"');
-                                $request->bindParam(':pseudo', $pseudo);
-                                $request->bindParam(':nom', $nom);
-                                $request->bindParam(':prenom', $prenom);
-                                $request->bindParam(':email', $email);
+                                $id = $_SESSION["id_joueurs"];
+                                $req = $db->prepare('UPDATE joueurs SET pseudo = :varpseudo, nom = :varnom, prenom = :varprenom, email = :varemail WHERE id = :varid');
+                                $req->execute(array(
+                                    'varpseudo' => $pseudo,
+                                    'varnom' => $nom,
+                                    'varprenom' => $prenom,
+                                    'varemail' => $email,
+                                    'varid' => $id,
+                                    ));
+                               
                                 header('Location: profil.php');
                                 }
                         }
@@ -77,7 +81,7 @@ $aJeux= $oJeux->fetchAll(PDO::FETCH_ASSOC);
                             <input type="email" name="email" id="inputEmail" class="form-control champ" value="<?php echo $aJeux[0]["email"] ?>" required="" >
 
 
-                            <button class="btn btn-lg btn-primary btn-block" name="signin" type="submit">Sauvegarder</button>
+                            <button class="btn btn-lg btn-primary btn-block" name="sauver" type="submit">Sauvegarder</button>
                         </form>
                 <?php
                         
