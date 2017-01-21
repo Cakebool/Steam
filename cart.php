@@ -1,21 +1,21 @@
 <?php
-    session_start();
-    include"conf/db.php";
-   
+session_start();
+include"conf/db.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Cart | E-Shopper</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/price-range.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Cart | E-Shopper</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<link href="css/price-range.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -30,12 +30,12 @@
 </head><!--/head-->
 <?php include 'menu.php'; ?>
 <body>
-    
+	
 	<header id="header"><!--header-->
 		
 		
 		
-	
+		
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
 				<div class="row">
@@ -50,14 +50,6 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.php">Products</a></li>
-										<li><a href="product-details.php">Product Details</a></li> 
-										<li><a href="checkout.php">Checkout</a></li> 
-										<li><a href="cart.php" class="active">Cart</a></li> 
-                                    </ul>
-                                </li> 
 								<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 								
 							</ul>
@@ -77,8 +69,8 @@
 		<div class="container">
 			<div class="breadcrumbs">
 				<ol class="breadcrumb">
-				  <li><a href="#">Home</a></li>
-				  <li class="active">Shopping Cart</li>
+					<li><a href="#">Home</a></li>
+					<li class="active">Shopping Cart</li>
 				</ol>
 			</div>
 			<div class="table-responsive cart_info">
@@ -173,94 +165,34 @@
 					</tbody>
 				</table>
 			</div>
-		</div>
-	</section> <!--/#cart_items-->
 
-	<section id="do_action">
-		<div class="container">
-			<div class="heading">
-				<h3>What would you like to do next?</h3>
-				<p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
-			</div>
+
+
+
+
 			<div class="row">
-				<div class="col-sm-6">
-					<div class="chose_area">
-						<ul class="user_option">
-							<li>
-								<input type="checkbox">
-								<label>Use Coupon Code</label>
-							</li>
-							<li>
-								<input type="checkbox">
-								<label>Use Gift Voucher</label>
-							</li>
-							<li>
-								<input type="checkbox">
-								<label>Estimate Shipping & Taxes</label>
-							</li>
-						</ul>
-						<ul class="user_info">
-							<li class="single_field">
-								<label>Country:</label>
-								<select>
-									<option>United States</option>
-									<option>Bangladesh</option>
-									<option>UK</option>
-									<option>India</option>
-									<option>Pakistan</option>
-									<option>Ucrane</option>
-									<option>Canada</option>
-									<option>Dubai</option>
-								</select>
-								
-							</li>
-							<li class="single_field">
-								<label>Region / State:</label>
-								<select>
-									<option>Select</option>
-									<option>Dhaka</option>
-									<option>London</option>
-									<option>Dillih</option>
-									<option>Lahore</option>
-									<option>Alaska</option>
-									<option>Canada</option>
-									<option>Dubai</option>
-								</select>
+				<!-- Large modal -->
+				<button type="button" class="btn btn-lg btn-primary btn-block" style="margin-bottom: 30px;" data-toggle="modal" data-target=".bs-example-modal-lg">Validez la commande</button>
+
+				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
 							
-							</li>
-							<li class="single_field zip-field">
-								<label>Zip Code:</label>
-								<input type="text">
-							</li>
-						</ul>
-						<a class="btn btn-default update" href="">Get Quotes</a>
-						<a class="btn btn-default check_out" href="">Continue</a>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="total_area">
-						<ul>
-							<li>Cart Sub Total <span>$59</span></li>
-							<li>Eco Tax <span>$2</span></li>
-							<li>Shipping Cost <span>Free</span></li>
-							<li>Total <span>$61</span></li>
-						</ul>
-							<a class="btn btn-default update" href="">Update</a>
-							<a class="btn btn-default check_out" href="">Check Out</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section><!--/#do_action-->
-
-	
-	
+							<div class="modal-body">
+								
+								<H2>Merci de votre commande</H2>
+								<h4>Pour revenir a la boutique, cliquez <a href="shop.php"/>ici</h4>		
 
 
-    <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+
+
+							</div>
+						</section> <!--/#cart_items-->
+
+						<script src="js/jquery.js"></script>
+						<script src="js/bootstrap.min.js"></script>
+						<script src="js/jquery.scrollUp.min.js"></script>
+						<script src="js/jquery.prettyPhoto.js"></script>
+						<script src="js/main.js"></script>
+					</body>
+					</html>

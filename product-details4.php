@@ -118,7 +118,7 @@ include"conf/db.php";
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="images/product-details/DL.jpg" alt="" />
+								<img src="images/product-details/skyrim.jpg" alt="" />
 							</div>
 						</div>
 						<div class="col-sm-7">
@@ -128,7 +128,7 @@ include"conf/db.php";
 								<p>Web ID: 1089772</p>
 								<img src="images/product-details/rating.png" alt="" />
 								<span>
-									<span>EU 40€</span>
+									<span>EU 25€</span>
 									<label>Quantity:</label>
 									<input type="text" value="1" />
 									<button type="button" class="btn btn-fefault cart">
@@ -146,8 +146,13 @@ include"conf/db.php";
 				</div>
 			</div>
 			<div class="jumbotron">
-        <h1>Dying Light</h1>
-        <p>Dying Light: The Following - Enhanced Edition fait passer le jeu de survie contre des zombies pimenté de parkour à un tout autre niveau. Profitez de l'expérience ultime de Dying Light avec le tout nouveau système de Légende, les graphismes améliorés, les améliorations majeures de gameplay et bien plus encore. Ce pack contient le contenu bonus d'une année entière, dont le mode Jouez le zombie, Cuisine & entrepôt, l'Ultimate Survivor Bundle et La horde de Bozak. Enfin et surtout, voyagez au-delà des murs d'Harran pour découvrir une nouvelle, vaste et dangereuse région dans Dying Light: The Following. Il s'agit d'une énorme extension basée sur l'histoire qui intègre des personnages mystérieux, des nouvelles armes redoutables, des quêtes inattendues et des buggies entièrement personnalisables et conduisibles.
+        <h1>Skyrim</h1>
+        <p>LA RENAISSANCE DU FANTASTIQUE
+Le nouveau chapitre très attendu de la saga Elder Scrolls nous arrive des créateurs du jeu de l'année 2006 et 2008, Bethesda Game Studios. Skyrim réinvente et révolutionne le monde ouvert, ramenant à la vie un monde complet que vous pourrez librement explorer. 
+
+UNE AUTRE VIE DANS UN AUTRE MONDE
+Incarnez le personnage de votre choix et faites ce qui vous plaît. La liberté d'action est totale et l'aventure est sans pareil dans The Elder Scrolls.
+
 
 </p>
       </div>

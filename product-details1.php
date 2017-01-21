@@ -118,7 +118,7 @@ include"conf/db.php";
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="images/product-details/DL.jpg" alt="" />
+								<img src="images/product-details/SMB.jpg" alt="" />
 							</div>
 						</div>
 						<div class="col-sm-7">
@@ -128,7 +128,7 @@ include"conf/db.php";
 								<p>Web ID: 1089772</p>
 								<img src="images/product-details/rating.png" alt="" />
 								<span>
-									<span>EU 40€</span>
+									<span>EU 12€</span>
 									<label>Quantity:</label>
 									<input type="text" value="1" />
 									<button type="button" class="btn btn-fefault cart">
@@ -146,8 +146,10 @@ include"conf/db.php";
 				</div>
 			</div>
 			<div class="jumbotron">
-        <h1>Dying Light</h1>
-        <p>Dying Light: The Following - Enhanced Edition fait passer le jeu de survie contre des zombies pimenté de parkour à un tout autre niveau. Profitez de l'expérience ultime de Dying Light avec le tout nouveau système de Légende, les graphismes améliorés, les améliorations majeures de gameplay et bien plus encore. Ce pack contient le contenu bonus d'une année entière, dont le mode Jouez le zombie, Cuisine & entrepôt, l'Ultimate Survivor Bundle et La horde de Bozak. Enfin et surtout, voyagez au-delà des murs d'Harran pour découvrir une nouvelle, vaste et dangereuse région dans Dying Light: The Following. Il s'agit d'une énorme extension basée sur l'histoire qui intègre des personnages mystérieux, des nouvelles armes redoutables, des quêtes inattendues et des buggies entièrement personnalisables et conduisibles.
+        <h1>Super meat boy</h1>
+        <p>Super Meat Boy est un jeu de plateforme où vous incarnez un cube de viande animé qui tente de sauver sa petite-amie (constituée de pansements) d'un fœtus maléfique dans un bocal.
+
+Notre héros de viande sautera depuis des murs, par dessus des océans de scies vrombissantes, à travers des grottes qui s'effondrent et des piscines remplies de vielles seringues. Sacrifiant son bien-être pour sauver sa demoiselle en détresse. Super Meat Boy s'inspire de jeux NES Old School comme Mega Man 2, Ghost and Goblins et Super Mario Bros. 2 (la version japonaise) et en extrait l'essentiel : un jeu de plateforme où seuls les réflexes comptent.
 
 </p>
       </div>

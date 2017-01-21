@@ -118,7 +118,7 @@ include"conf/db.php";
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="images/product-details/DL.jpg" alt="" />
+								<img src="images/product-details/overwatch.jpg" alt="" />
 							</div>
 						</div>
 						<div class="col-sm-7">
@@ -128,7 +128,7 @@ include"conf/db.php";
 								<p>Web ID: 1089772</p>
 								<img src="images/product-details/rating.png" alt="" />
 								<span>
-									<span>EU 40€</span>
+									<span>EU 60€</span>
 									<label>Quantity:</label>
 									<input type="text" value="1" />
 									<button type="button" class="btn btn-fefault cart">
@@ -146,8 +146,14 @@ include"conf/db.php";
 				</div>
 			</div>
 			<div class="jumbotron">
-        <h1>Dying Light</h1>
-        <p>Dying Light: The Following - Enhanced Edition fait passer le jeu de survie contre des zombies pimenté de parkour à un tout autre niveau. Profitez de l'expérience ultime de Dying Light avec le tout nouveau système de Légende, les graphismes améliorés, les améliorations majeures de gameplay et bien plus encore. Ce pack contient le contenu bonus d'une année entière, dont le mode Jouez le zombie, Cuisine & entrepôt, l'Ultimate Survivor Bundle et La horde de Bozak. Enfin et surtout, voyagez au-delà des murs d'Harran pour découvrir une nouvelle, vaste et dangereuse région dans Dying Light: The Following. Il s'agit d'une énorme extension basée sur l'histoire qui intègre des personnages mystérieux, des nouvelles armes redoutables, des quêtes inattendues et des buggies entièrement personnalisables et conduisibles.
+        <h1>Overwatch</h1>
+        <p>Soldats. Scientifiques. Aventuriers. Marginaux.
+
+Dans une période de crise mondiale, des héros venus de tous les horizons ont composé une équipe d’intervention internationale pour ramener la paix dans un monde déchiré par la guerre : OVERWATCH.
+
+Cette organisation a mis fin à la crise et préservé la paix pendant les décennies suivantes, inspiré une ère d’exploration, d’innovation et de découvertes.
+
+Aujourd'hui, le conflit s'étend à nouveau au monde entier… Répondrez-vous à l'appel qui a été lancé ?
 
 </p>
       </div>

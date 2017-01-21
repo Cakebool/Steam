@@ -118,7 +118,7 @@ include"conf/db.php";
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="images/product-details/DL.jpg" alt="" />
+								<img src="images/product-details/minecraft.jpg" alt="" />
 							</div>
 						</div>
 						<div class="col-sm-7">
@@ -128,7 +128,7 @@ include"conf/db.php";
 								<p>Web ID: 1089772</p>
 								<img src="images/product-details/rating.png" alt="" />
 								<span>
-									<span>EU 40€</span>
+									<span>EU 15€</span>
 									<label>Quantity:</label>
 									<input type="text" value="1" />
 									<button type="button" class="btn btn-fefault cart">
@@ -146,8 +146,10 @@ include"conf/db.php";
 				</div>
 			</div>
 			<div class="jumbotron">
-        <h1>Dying Light</h1>
-        <p>Dying Light: The Following - Enhanced Edition fait passer le jeu de survie contre des zombies pimenté de parkour à un tout autre niveau. Profitez de l'expérience ultime de Dying Light avec le tout nouveau système de Légende, les graphismes améliorés, les améliorations majeures de gameplay et bien plus encore. Ce pack contient le contenu bonus d'une année entière, dont le mode Jouez le zombie, Cuisine & entrepôt, l'Ultimate Survivor Bundle et La horde de Bozak. Enfin et surtout, voyagez au-delà des murs d'Harran pour découvrir une nouvelle, vaste et dangereuse région dans Dying Light: The Following. Il s'agit d'une énorme extension basée sur l'histoire qui intègre des personnages mystérieux, des nouvelles armes redoutables, des quêtes inattendues et des buggies entièrement personnalisables et conduisibles.
+        <h1>Minecraft</h1>
+        <p>THE ADVENTURE OF A LIFETIME IN THE WORLD OF MINECRAFT
+
+In this five part episodic series, you’ll embark on a perilous adventure across the Overworld, through the Nether, to the End, and beyond. You and your friends revere the legendary Order of the Stone: Warrior, Redstone Engineer, Griefer, and Architect; slayers of the Ender Dragon. While at EnderCon in hopes of meeting Gabriel the Warrior, you and your friends discover that something is wrong… something dreadful. Terror is unleashed, and you must set out on a quest to find The Order of the Stone if you are to save your world from oblivion.
 
 </p>
       </div>
